@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-4</title>
+    <style>
+    .sec-1{
+        width: 65%;
+        background-color: aqua;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .block label { 
+        display: inline-block; 
+        width: 140px; 
+        text-align: right; 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="sec-1">
+            <h2>Dine Booking</h2>
+                <div>
+                <form action="">
+                    <div class="block">
+                        <label for="visitor_name">Visitor Name</label>
+                        <input type="text" name="visitor_name" id="visitor_name">
+                    </div>
+                    <div class="block">
+                        <label for="members">Number of members: </label>
+                        <input type="text" name="members" id="members">
+                    </div>
+                    <div class="block">
+                        <label for="phone">Contact Number: </label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="block">
+                        <label for="phone">Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Type of food: </label>
+                        <input type="checkbox" id="south-indian" name="food" value="south-indian" checked>
+                        <label for="vehicle1">South Indian</label>
+                        <input type="checkbox" id="north-indian" name="food" value="north-indian">
+                        <label for="vehicle2">North Indian</label>
+                        <input type="checkbox" id="chinese" name="food" value="chinese">
+                        <label for="vehicle2">Chinese</label>
+                        <input type="checkbox" id="western" name="food" value="western">
+                        <label for="vehicle2">Western</label>
+                    </div>
+                    <div >
+                        <label for="room">Room Status: </label>
+                        <input type="radio" id="ac" name="room" value="ac">
+                        <label for="html">AC</label>
+                        <input type="radio" id="non-ac" name="room" value="non-ac" checked>
+                        <label for="html">Non-AC</label> 
+                    </div>
+                    <div>
+                        <label for="venue">Venue Preference: </label>
+                        <select name="venue" id="venue">
+                            <option value="">Select</option>
+                            <option value="Venue1">Venue 1</option>
+                            <option value="Venue2">Venue 2</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Book">
+                        <input type="submit" value="Reset">
+                    </div>
+                </form>
+                </div>
+        </section>
+    </div>
+</body>
+</html>
