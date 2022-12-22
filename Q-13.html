@@ -4,269 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Q-13</title>
     <style>
-        body {
-  background: lightblue;
-  font-family: Arial, sans-serif;
-  transition: background .1s;
-}
-
-.calc {
-  font-family: Arial, sans-serif;
-  text-rendering: geometricPrecision;
-  width: 260px;
-  background: grey;
-  margin: 100px auto 0 auto;
-  border-radius: 5px;
-  box-shadow: 0 4px 40px rgba(0,0,0,0.2),
-    inset 0 3px 0 rgba(255,255,255,0.2);
-  padding: 20px
-}
-
-.display {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: rgba(255,255,255,0.8);
-  background: rgba(0,0,0,.6);
-  font-size: 35px;
-  padding: 10px;
-  text-align: right;
-  border-radius: 2px;
-  box-shadow: inset 0 5px 8px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.3);
-}
-
-.header .titles {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: rgba(0,0,0,0.45);
-  font-size: 10px;
-  font-weight: bold;
-  margin-top: -8px;
-  padding-bottom: 8px;
-  text-align: right;
-  text-shadow: 0 1px 1px rgba(255,255,255,0.15);
-  user-select: none;
-}
-
-.display-main {
-  height: 38px;
-}
-
-.display-indicate {
-  font-size: 10px;
-  color: rgba(255,255,255,0.05);
-  text-align: left;
-  margin: -5px 0 -2px -5px;
-  text-transform: uppercase;
-  user-select: none;
-  transition: color .1s ease-in;
-}
-.max{
-  color: rgba(255,150,150,0.8);
-}
-
-.display-operations {
-  font-size: 15px;
-  color: rgba(255,255,255,0.5);
-  border-top: 1px solid rgba(255,255,255,0.1);
-  padding-top: 3px;
-  margin-top: 4px;
-}
-
-.row {
-  margin-left: -12px;
-  margin-top: 10px;
-}
-
-.row:after, .bottom-row:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.left, .right {
-  float: left;
-}
-
-.button {
-  position: relative;
-  top:0;
-  height: 41px;
-  color: rgba(0,0,0,0.6);
-  font-size: 16px;
-  font-family:"Arial Bold", Gadget, Arial, sans-serif;
-  font-weight: 700;
-  text-align: center;
-  padding: 9px 0 11px 0;
-  border-radius: 2px;
-  float: left;
-  width: 56px;
-  background: rgba(255,255,255,0.8);
-  margin-left: 12px;
-  text-transform: uppercase;
-  border: 0;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2),
-    inset 0 1px 0 rgba(255,255,255,0.6);
-  transition: all .1s;
-  cursor:pointer;
-  user-select: none;
-}
-
-.button:hover {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.6);
-  background: rgba(255,255,255,0.95);
-  color: rgba(0,0,0,0.8);
-}
-.button:active {
-  top:1px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.3);
-}
-.button:focus {
-  outline:0;
-}
-
-.ac, .ce {
-  background: #FF8A80
-}
-
-.ac:hover, .ce:hover {
-  background: #FF5252;
-}
-
-.minus {
-  padding-top: 11px;
-  padding-bottom: 9px;
-}
-
-.zero {
-  width: 124px;
-}
-
-.eq{
-  margin-top: 10px;
-  padding: 35px 0 15px 0;
-}
-
-.mult {
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 11px;
-}
-
-/* tips */
-
-.tips {
-  width: 300px;
-  margin: 70px auto;
-}
-
-.tips .title {
-  font-size: 20px;
-  color: rgba(0,0,0,0.6);
-  text-align: center;
-  font-size: ;
-  margin-bottom: 20px;
-}
-
-.tips .hint {
-  margin-bottom: 20px;
-  color: rgba(0,0,0,0.8);
-}
-
-.hint.small {
-  text-align: center;
-  font-size: 14px;
-  margin-top: -12px;
-  margin-bottom: 30px;
-  color: rgba(0,0,0,0.5);
-}
-
-.hint-sel {
-  background: rgba(175,50,50,0.8);
-  font-size: 14px;
-  font-weight: bold;
-  color: rgba(250,250,250,0.9);
-  padding: 3px 5px;
-  border-radius: 2px;
-  margin: 0 3px;
-}
-
-.hint-btn {
-  background: rgba(30,30,30,0.6);
-  font-size: 14px;
-  font-weight: bold;
-  color: rgba(250,250,250,0.9);
-  padding: 3px 5px;
-  border-radius: 2px;
-  margin: 0 3px;
-}
-
-    </style>
+      .calc {
+        width: 260px;
+        background: #CFCFCF;
+        margin: 100px auto 0 auto;
+        border-radius: 5px;
+        padding: 20px
+      }
+      .display {
+        color: rgba(255,255,255,0.8);
+        background: rgba(0,0,0,.6);
+        font-size: 35px;
+        padding: 10px;
+        text-align: right;
+        border-radius: 5px;
+      }
+      .display-main {
+        height: 38px;
+      }
+      .row {
+        margin-left: -12px;
+        margin-top: 10px;
+      }
+      .row:after, .bottom-row:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .button { 
+        height: 50px;
+        color: #3A3A38;
+        font-size: 16px;  
+        font-weight: 700;
+        text-align: center;
+        padding: 9px 0 11px 0;
+        border-radius: 5px;
+        float: left;
+        width: 56px;
+        background: #F5F5F5;
+        margin-left: 12px;
+        text-transform: uppercase;
+        border: 0;  
+        cursor:pointer;      
+      }
+      .c {
+        background-color: #C1FFC1;
+      }
+      .eq {
+        background-color: #F4F776;
+      }
+      </style>
 </head>
 <body>
     <div class="container">
         <div class="calc">
-          <div class="header">
-            <div class="titles">
-              Simple Calculator
-            </div>
-          </div>
           <div class="display">
-            <div class="display-indicate">
-              max
-            </div>
             <div class="display-main">
               0
-            </div>
+            </div> 
+          </div>      
+          <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">+</button>
+          </div>
+      
+          <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+          </div>
             
-            <div class="display-operations">
-              0
-            </div>
-          </div>
-      
           <div class="row">
-            <button class="button ac">ac</button>
-            <button class="button ce">ce</button>
-            <button class="button div">%</button>
-            <button class="button mult">x</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">*</button>
           </div>
-      
-          <div class="row">
-            <button class="button seven">7</button>
-            <button class="button eight">8</button>
-            <button class="button nine">9</button>
-            <button class="button minus">−</button>
-          </div>
-      
-          <div class="row">
-            <button class="button four">4</button>
-            <button class="button five">5</button>
-            <button class="button six">6</button>
-            <button class="button plus">+</button>
-          </div>
-      
-          <div class="bottom-row">
-            <div class="left">
-              <div class="row">
-                <button class="button one">1</button>
-                <button class="button two">2</button>
-                <button class="button three">3</button>
-              </div>
               
-              <div class="row">
-                <button class="button zero">0</button>
-                <button class="button dot">.</button>
-              </div>
-            </div>
-            
-            <div class="right">
-              <div class="button eq">=</div>
-            </div>
-      
+          <div class="row">
+            <button class="button">0</button>
+            <button class="button">/</button>
+            <button class="button c">c</button>
+            <button class="button eq">=</button>
           </div>
-      
         </div>
-        
-       
 </body>
 </html>
